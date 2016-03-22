@@ -11,7 +11,7 @@ import javax.swing.JPanel;
  */
 public class CanvasProperties extends JPanel {
 
-    public void doDroawing(Graphics g) {    // edw bazw oti allages
+    public void doDroawingCanvasTable(Graphics g) {    // edw bazw oti allages
                                             //kai oti properties thelw na exei o 
                                             //camvas mou.p.x to xrwmma tou
         
@@ -20,11 +20,12 @@ public class CanvasProperties extends JPanel {
         g2d.fillRect(0, 0, getWidth(), getHeight());
     }
     
+    @Override
     public void paintComponent(Graphics g){ //gia na efarmostoun ola ta parapanw 
                                             //prepei na na kalesw ti super....
                                             //kai na kalesw tn sunartisi pou exei 
                                             //ta properties.
         super.paintComponent(g);
-        doDroawing(g);
+        doDroawingCanvasTable(g);
     }
 }

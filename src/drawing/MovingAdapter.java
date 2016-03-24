@@ -16,7 +16,7 @@ import javax.swing.JFrame;
  */
 public class MovingAdapter extends MouseAdapter {
 
-    private RectangleConstr rect;
+    private ShapeConstr rect;
     private int x;
     private int y;
 

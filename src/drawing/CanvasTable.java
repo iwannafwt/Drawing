@@ -8,7 +8,7 @@ import javax.swing.JFrame;
  */
 public class CanvasTable extends JFrame{
 
-    private RectangleConstr rect;
+    private ShapeConstr rect;
     
     public CanvasTable(){
           initUI();

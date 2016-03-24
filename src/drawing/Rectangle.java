@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  */
 public class Rectangle extends JPanel {
 
-    private RectangleConstr rect;
+    private ShapeConstr rect;
 
     public Rectangle() {
         initUI2();
@@ -26,7 +26,7 @@ public class Rectangle extends JPanel {
         addMouseListener(ma);
         addMouseWheelListener(new ScaleHandler());
 
-        rect = new RectangleConstr(150, 150, 50, 50);//i thesi pou tha briskete 
+        rect = new ShapeConstr(150, 150, 50, 50);//i thesi pou tha briskete 
         //to tetragwno
     }
 

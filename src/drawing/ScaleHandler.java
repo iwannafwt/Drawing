@@ -5,11 +5,9 @@
  */
 package drawing;
 
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import javax.swing.JFrame;
-import javax.swing.event.MouseInputListener;
 
 /**
  *
@@ -17,7 +15,7 @@ import javax.swing.event.MouseInputListener;
  */
 public class ScaleHandler extends JFrame implements MouseWheelListener {
 
-    private RectangleConstr rect;
+    private ShapeConstr rect;
 
     @Override
     public void mouseWheelMoved(MouseWheelEvent e) {
@@ -37,12 +35,11 @@ public class ScaleHandler extends JFrame implements MouseWheelListener {
                 float amount = e.getWheelRotation() * 5f;
                 rect.addWidth(amount);
                 rect.addHeight(amount);
-                
+
                 Repaint rp = new Repaint();
                 rp.repaint();
-}
+            }
         }
     }
-
 
 }

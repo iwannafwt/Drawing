@@ -6,9 +6,9 @@ import java.awt.geom.Rectangle2D;
  *
  * @author ΙΩΑΝΝΑ
  */
-public class RectangleConstr extends Rectangle2D.Float { //Constructor
+public class ShapeConstr extends Rectangle2D.Float { //Constructor
 
-    public RectangleConstr(float x, float y, float width, float height) {
+    public ShapeConstr(float x, float y, float width, float height) {
 
         setRect(x, y, width, height);
     }
